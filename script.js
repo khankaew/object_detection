@@ -1,3 +1,8 @@
+console.log('hi');
+console.log(tf.getBackend());
+tf.setBackend('webgl');
+console.log(tf.getBackend());
+
 let video = document.getElementById("video");
 let model;
 // declare a canvas variable and get its context
@@ -118,6 +123,7 @@ const detectObject = async () => {
 setupCamera();
 video.addEventListener("loadeddata", async () => {
   // model = await blazeface.load();
+  console.log('cocoSsd.load...');
   model = await cocoSsd.load();
   console.log(model);
 
