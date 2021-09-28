@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutorial</title>
+  </head>
+
+  <body>
+    <h1>Face Detection</h1>
+
+    <div
+      style="
+        width: 164px; /* 204px - (20*2) */
+        height: 286px; /* 326px - (20*2) */
+        border: 1px solid red;
+        position: absolute;
+        margin: 100px; /* x,y = 100,100 */
+      "
+    ></div>
+    <div
+      style="
+        width: 204px;
+        height: 326px;
+        border: 1px solid red;
+        position: absolute;
+        margin: 80px; /* x,y = 80,80 */
+      "
+    ></div>
+
+    <video id="video" autoplay style="display: none"></video>
+    <canvas id="canvas" width="600px" height="400px"></canvas>
+
+
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/blazeface"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+  <!-- <script src="coco-ssd.js"></script> -->
+  <script src="script.js"></script>
+</html>
